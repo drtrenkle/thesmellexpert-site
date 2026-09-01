@@ -343,10 +343,27 @@ ul{ margin:0; padding:0; list-style:none; }
   padding:32px;
 }
 .contact-card .check-list li{ color:var(--ink-soft); }
+.wrap-wide{ max-width:1320px; }
+
+.contact-intro{ max-width:70ch; margin-bottom:36px; }
+
+.contact-row{
+  display:grid;
+  grid-template-columns:1.5fr 1fr;
+  gap:32px;
+  align-items:start;
+}
+
 .form-embed{
   border-radius:var(--radius);
   overflow:hidden;
   box-shadow:0 8px 30px rgba(7,27,52,0.12);
+  background:var(--white);
+}
+.form-embed-logo{
+  display:block;
+  width:180px;
+  margin:24px auto 8px;
 }
 .form-embed iframe{
   width:100%;
@@ -354,7 +371,10 @@ ul{ margin:0; padding:0; list-style:none; }
   border:0;
   display:block;
 }
+.contact-note{ margin-top:28px; }
+
 @media (max-width: 860px){
+  .contact-row{ grid-template-columns:1fr; }
   .form-embed iframe{ height:1100px; }
 }
 
